@@ -6,6 +6,7 @@ const router = require("./routes/book-routes");
 const app = express();
 
 // Middlewares
+app.use(express.json());
 app.use("/books", router); // localhost:5000/books
 
 
