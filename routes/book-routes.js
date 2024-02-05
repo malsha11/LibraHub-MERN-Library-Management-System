@@ -15,5 +15,7 @@ router.get("/:id", booksController.getById);
 //Implement PUT endpoint to update a book by ID
 router.put("/:id", booksController.updateBook);
 
+//Implement delete endpoint to delete a book by ID
+router.delete("/:id", booksController.deleteBook);
 
 module.exports = router;
