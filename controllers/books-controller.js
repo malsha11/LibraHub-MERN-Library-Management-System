@@ -39,7 +39,7 @@ const getById = async (req, res, next) => {
 // POST Add Book Endpoint
 // Implement POST endpoint to add a new book
 const addBook = async (req, res, next) => {
-  const { name, author, description, price, available } = req.body;
+  const { name, author, description, price, available,image } = req.body;
   let book;
   try {
     book = new Book({
@@ -48,6 +48,7 @@ const addBook = async (req, res, next) => {
       description,
       price,
       available,
+      image,
     });
     await book.save();
   } catch (err) {
