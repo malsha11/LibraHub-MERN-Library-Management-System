@@ -74,6 +74,24 @@ Before you begin, ensure you have the following installed:
    cd ../frontend
    npm start
 
+
+## Front-end Screenshots
+
+![Home Page 1](https://github.com/malsha11/LibraHub-MERN-Library-Management-System/assets/84215169/ab6e5ee3-06db-4f3b-ace1-292da231b317)
+
+![Home Page 2](https://github.com/malsha11/LibraHub-MERN-Library-Management-System/assets/84215169/310c1789-2e1a-4607-bc62-96dfab6aa938)
+
+![Home Page 3 (Footer)](https://github.com/malsha11/LibraHub-MERN-Library-Management-System/assets/84215169/f073d95f-eb01-410e-bf19-1d33dbbe21dc)
+
+![Add Book 1](https://github.com/malsha11/LibraHub-MERN-Library-Management-System/assets/84215169/09ed7135-55cd-4db6-9f8b-651822d79e2b)
+
+![Add Book 2](https://github.com/malsha11/LibraHub-MERN-Library-Management-System/assets/84215169/6268b6ee-5db6-4f82-93ec-d701c8aa27ae)
+
+![List of Books](https://github.com/malsha11/LibraHub-MERN-Library-Management-System/assets/84215169/52aaa1a7-a46c-4951-b574-a1f094ee9fa9)
+
+![About Us](https://github.com/malsha11/LibraHub-MERN-Library-Management-System/assets/84215169/f0e89875-dc13-41d1-9798-4bed0d12e2ef)
+
+
 ## API Endpoints
 
 GET /api/books: Retrieve a list of all books.
@@ -85,8 +103,3 @@ POST /api/books: Add a new book to the collection.
 PUT /api/books/:id: Update details of a specific book by ID.
 
 DELETE /api/books/:id: Delete a specific book by ID.
-
-## Front-end Screenshots
-
-
-   
