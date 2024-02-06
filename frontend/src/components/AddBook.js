@@ -20,6 +20,8 @@ const AddBook = () => {
     publicationYear: "",
     numberOfBooks: "",
   });
+  const [errorMessage, setErrorMessage] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
 
   const handleChange = (e) => {
     setInputs((prevState) => ({
@@ -29,22 +31,39 @@ const AddBook = () => {
   };
 
   const sendRequest = async () => {
-    await axios
-      .post("http://localhost:5000/books", {
+    try {
+      const res = await axios.post("http://localhost:5000/books", {
         name: String(inputs.name),
         author: String(inputs.author),
         description: String(inputs.description),
         image: String(inputs.image),
         publicationYear: String(inputs.publicationYear),
         numberOfBooks: String(inputs.numberOfBooks),
-      })
-      .then((res) => res.data);
+      });
+      return res.data;
+    } catch (error) {
+      console.error("Error adding book:", error);
+      throw error;
+    }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(inputs);
-    sendRequest().then(() => history("/books"));
+    try {
+      if (!Object.values(inputs).every((value) => value.trim())) {
+        setErrorMessage("Please fill in all fields.");
+        return;
+      }
+      await sendRequest();
+      setSuccessMessage("Book added successfully!");
+      setTimeout(() => {
+        setSuccessMessage("");
+        history("/books");
+      }, 2000);
+    } catch (error) {
+      console.error("Error adding book:", error);
+    }
   };
 
   return (
@@ -114,15 +133,23 @@ const AddBook = () => {
           variant="outlined"
           name="image"
         />
-        <br></br>
+        <br />
         <Button variant="contained" type="submit">
           Add Book
         </Button>
+        {errorMessage && (
+          <Typography variant="body1" color="error" align="center">
+            {errorMessage}
+          </Typography>
+        )}
+        {successMessage && (
+          <Typography variant="body1" color="success" align="center">
+            {successMessage}
+          </Typography>
+        )}
       </Box>
-      <Footer/>
+      <Footer />
     </form>
-    
-    
   );
 };
 
