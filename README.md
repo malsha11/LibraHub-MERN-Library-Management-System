@@ -96,6 +96,13 @@ Before you begin, ensure you have the following installed:
 
 ![List of Books](https://github.com/malsha11/LibraHub-MERN-Library-Management-System/assets/84215169/52aaa1a7-a46c-4951-b574-a1f094ee9fa9)
 
+**Error Handling:**
+
+![Error Handling](https://github.com/malsha11/LibraHub-MERN-Library-Management-System/assets/84215169/335a3203-51bb-4cff-b2a3-726181ce282b)
+
+![Status Handling](https://github.com/malsha11/LibraHub-MERN-Library-Management-System/assets/84215169/ea1754a8-8460-4d80-be0a-40ab3a89919b)
+
+
  **About Us Page:**
 
 ![About Us](https://github.com/malsha11/LibraHub-MERN-Library-Management-System/assets/84215169/f0e89875-dc13-41d1-9798-4bed0d12e2ef)
