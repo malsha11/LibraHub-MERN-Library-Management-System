@@ -53,8 +53,8 @@ Before you begin, ensure you have the following installed:
    npm install
 4. **Set up the MongoDB database:**
    
-Make sure your MongoDB server is running.
-Update the MongoDB connection string in App.js.
+   Make sure your MongoDB server is running.
+   Update the MongoDB connection string in App.js.
 
 5. **Run the back-end server:**
    
@@ -77,9 +77,13 @@ Update the MongoDB connection string in App.js.
 ## API Endpoints
 
 GET /api/books: Retrieve a list of all books.
+
 GET /api/books/:id: Retrieve details of a specific book by ID.
+
 POST /api/books: Add a new book to the collection.
+
 PUT /api/books/:id: Update details of a specific book by ID.
+
 DELETE /api/books/:id: Delete a specific book by ID.
 
 ## Front-end Screenshots
