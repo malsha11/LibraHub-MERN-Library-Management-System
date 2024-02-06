@@ -3,11 +3,14 @@
     flex-direction: column;
     background-color: black;
     color: wheat;
+    margin-top: 15%;
+   
   }
   
   .footer-data {
     display: flex;
     justify-content: space-around;
+    
   }
   
   .contact-details {

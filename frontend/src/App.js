@@ -6,6 +6,10 @@ import AddBook from "./components/AddBook";
 import Books from "./components/Book/Books";
 import About from "./components/About";
 import BookDetail from "./components/Book/BookDetail";
+import BookDetailsPage from "./components/Book/BookDetailsPage";
+
+
+
 function App() {
   return (
     <React.Fragment>
@@ -19,6 +23,10 @@ function App() {
           <Route path="/books" element={<Books />} />
           <Route path="/about" element={<About />} />
           <Route path="/books/:id" element={<BookDetail />} />
+          <Route path="/book/:id" element={<BookDetailsPage />} /> {/* Add this line */}
+         
+
+          
         </Routes>
       </main>
     </React.Fragment>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import Footer from "../components/Footer";
 import {
   Button,
   FormLabel,
@@ -113,11 +114,15 @@ const AddBook = () => {
           variant="outlined"
           name="image"
         />
+        <br></br>
         <Button variant="contained" type="submit">
           Add Book
         </Button>
       </Box>
+      <Footer/>
     </form>
+    
+    
   );
 };
 
