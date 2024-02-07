@@ -96,6 +96,10 @@ Before you begin, ensure you have the following installed:
 
 ![List of Books](https://github.com/malsha11/LibraHub-MERN-Library-Management-System/assets/84215169/52aaa1a7-a46c-4951-b574-a1f094ee9fa9)
 
+**Delete and Update Books:**
+
+![Delete and Upadte](https://github.com/malsha11/LibraHub-MERN-Library-Management-System/assets/84215169/eecf4ca0-de1a-4ebe-becd-f3da62966e8e)
+
 **Error Handling:**
 
 ![Error Handling](https://github.com/malsha11/LibraHub-MERN-Library-Management-System/assets/84215169/335a3203-51bb-4cff-b2a3-726181ce282b)
